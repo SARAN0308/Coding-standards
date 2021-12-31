@@ -1,0 +1,22 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+public class VerifySteps {
+    static By eMail    =By.xpath("//input[@id=\"email\"]");
+    static By password=By.xpath("//input[@id=\"pass\"]");
+    static By loginButton= By.xpath("//button[@type=\"submit\"]");
+
+    public static WebElement getEmail(){
+        return userAction.driver.findElement(eMail);
+    }
+
+    public static WebElement getPassword(){
+        return userAction.driver.findElement(password);
+    }
+
+    public static WebElement getLoginButton(){
+        return userAction.driver.findElement(loginButton);
+    }
+
+}
+
